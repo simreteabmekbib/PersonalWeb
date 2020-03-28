@@ -10789,7 +10789,8 @@ font-weight: normal;
 .gallery #content {
   
   min-height: 550px;
-  
+  text-decoration: none;
+  padding-left: 40px;
 }
 
 .gallery #content .container {

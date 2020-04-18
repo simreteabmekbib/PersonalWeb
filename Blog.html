@@ -5,94 +5,255 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Simreteab / Blog</title>
     <link rel="shortcut icon" type="image/png" href="./Assets/images/icon.png" sizes="114x114">
-    <link href="./Assets/css/bootstrap-4.4.1-dist.css/bootstrap.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="./Assets/css/bootstrap-4.4.1-dist.css/bootstrap.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.css">
+    <link rel="stylesheet" href="./Assets/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/6454e424b1.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./Assets/css/mystyle.css">
+    <script src="./Assets/js/jquery.js"></script>
+
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.sidebarBtn').click(function () {
+                $('.sidebar').toggleClass('active');
+            })
+        })
+    </script>
     <style>
-        #sticky-sidebar {
-            min-height: 100vh;
-        }
-
-       .pad{
-           margin-right: 0.1rem;
-       }
-       .opacity {
-            opacity: 0.2;
-        }
         img {
-
             height: 90px;
             width: 90px;
         }
-    </style> 
+
+        body {
+            overflow-y: scroll;
+            overflow-x: hidden;
+        }
+
+        @media only screen and (max-width: 992px) {
+            .card_layout {
+                padding: 2rem 1rem;
+                margin-bottom: 2rem;
+                background-color: #e9ecef;
+                border-radius: 0.3rem;
+            }
+        }
+
+        @media only screen and (max-width: 576px) {
+
+            #main {
+                padding-left: 1rem;
+            }
+
+        }
+
+        .opacity {
+            color: rgba(0, 0, 0, 0.2);
+        }
+    </style>
 </head>
 
-<body class="ml-5 mt-3 mb-3" style="font-family: 'Times New Roman', Times, serif;">
-    <div class="container-fluid">
-        <div>
-            <div class="col-2 px-1 position-fixed bg-white" id="sticky-sidebar">
-                <div class="pl-2 pt-3 mr-3">
-                    <div class="h4 pb-3">
-                        <a href="" class="text-dark text-decoration-none">SIMRETEAB MEKBIB PHOTOGRAPHY</a>
-
-                    </div>
-                    <ul class="list-unstyled">
-
-
-                        <li><a href="./index.html" class="text-decoration-none text-dark small">Home</a></li>
+<body>
+    <div class="sidebar">
+        <div id="top_nav">
+            <a href="" class="text-dark text-decoration-none h4">SIMRETEAB MEKBIB PHOTOGRAPHY</a>
+            <button class="sidebarBtn">
+                <span></span>
+            </button>
+        </div>
+        <ul class="list-unstyled padtop">
 
 
-
-                        <li><a href="./Edited.html" class="text-decoration-none text-dark small">Edited</a></li>
+            <li><a href="./index.html" class="text-decoration-none text-dark small">Home</a></li>
 
 
 
-                        <li><a href="./Portraits.html" class="text-decoration-none text-dark small">Portraits</a></li>
+            <li><a href="./Edited.html" class="text-decoration-none text-dark small">Edited</a></li>
 
 
 
-                        <li><a href="Personal.html" class="text-decoration-none text-dark small">Personal</a></li>
+            <li><a href="./Portraits.html" class="text-decoration-none text-dark small">Portraits</a></li>
 
 
 
-                        <li><a href="./Blog.html" class="text-decoration-none text-dark small">Blog</a></li>
+            <li><a href="Personal.html" class="text-decoration-none text-dark small">Personal</a></li>
 
 
 
-                        <li><a href="./Contact+About_me.html" class="text-decoration-none text-dark small">Contact +
-                                About
-                                me.</a></li>
-                    </ul>
-                    <p class="small text-secondary"><small>© Simreteab Mekbib 2020</small></p>
+            <li><a href="./Blog.html" class="text-decoration-none text-dark small">Blog</a></li>
+
+
+
+            <li><a href="./Contact+About_me.html" class="text-decoration-none text-dark small">Contact +
+                    About
+                    me.</a></li>
+        </ul>
+
+        <p class="small text-secondary pt-3"><small>© Simreteab Mekbib 2020</small></p>
+        <div id="position">
+            <div>
+
+                <div class="social_icon">
+
+                    <a href="https://github.com/simreteabmekbib" target="_blank"><i class="fa fa-github text-center"
+                            id="social"></i>
+                    </a>
+
+                    <a href="https://www.facebook.com/simreteab.mekbib.5" target="_blank"><i
+                            class="fa fa-facebook-f text-center" id="social"></i>
+                    </a>
+
+                    <a href="https://www.instagram.com/simreteab_mekbib1234/" target="_blank"><i
+                            class="fa fa-instagram text-center" id="social"></i>
+                    </a>
+
+                    <a href="" class="text-decoration-none" id="share" target="_blank">Share</a>
                 </div>
-            </div>
-            <div class="offset-2 container-fluid col-10" id="main">
-                <div class="pl-5 pt-3">
-                    <div class="h4">
-                        Blog
-                    </div>
-                    <div class="border-bottom pb-4 pt-4 w-75 row">
-
-                      <a href="./Selena.html" class="text-dark text-decoration-none"><div class="size col-2">
-                            <img src="./Assets/images/mus2.jfif" alt="" class="rounded">
-                        </div>
-                        <div class="col-10 small">
-                         <div class="font-weight-bold h6">SELENA GOMEZ</div>
-                         <small> <div class="opacity">18 Apr 2019</div>
-                          Hello bright things
-                          Here brings another blog post of a recent shoot, I’m so behind in updating my work online so I have a few
-                          more shoots&nbsp;to post in the next coming weeks.
-            
-            
-                          This set of images were taken for the talented and sweet, Simreteab Mekbib whom is a…
-            </small>
-            </a>
-                        </div>
-                    </div>
+                <div class="fixed-bottom small mr-2 mt-1">
+                    <a href="" style="right: 0; bottom: 0; position: absolute;" id="hov-red">Using Format </a>
                 </div>
-
             </div>
         </div>
-    
+    </div>
+    <div class="offset-2" id="main">
+        <div class="pl-md-5 pt-5">
+            <div class="h4">
+                Blog
+            </div>
+            <div class="pb-4 pt-2 w-75 d-md-flex card_layout">
+
+                <a href="./Selena.html" class="text-dark text-decoration-none">
+                    <div>
+                        <img src="./Assets/images/mus2.jfif" alt="" class="rounded">
+                    </div>
+                    <div class="small mt-3 pt-2 ml-3">
+                        <div class="h6">SELENA GOMEZ</div>
+                        <small>
+                            <div class="opacity"><small>18 Apr 2019</small></div>
+                            Hello bright things
+                            Here brings another blog post of a recent shoot, I’m so behind in updating my work online so
+                            I have a few
+                            more shoots&nbsp;to post in the next coming weeks.
+
+
+                            This set of images were taken for the talented and sweet, Simreteab Mekbib whom is a…
+                        </small>
+                </a>
+
+            </div>
+
+        </div>
+        <div class="border-bottom pt-1 w-75"></div>
+        <div class="pb-4 pt-2 w-75 d-md-flex card_layout">
+
+            <a href="./Meseret.html" class="text-dark text-decoration-none">
+                <div>
+                    <img src="./Assets/images/mesi3.jfif" alt="" class="rounded">
+                </div>
+                <div class="small mt-3 pt-2 ml-3">
+                    <div class="h6">MESERET MEBRATE</div>
+                    <small>
+                        <div class="opacity"><small>21 Jun 2020</small></div>
+                        Hi all, Time for a new blog post, this time
+                        featuring the lovely Gerlie Siki. We were ever so lucky to be able to shoot
+                        at Concrete Swan’s beautiful pad thanks to the swift organization skills of
+                        Emma from Drop stitch...
+                    </small>
+            </a>
+
+        </div>
+
+    </div>
+    <div class="border-bottom pt-1 w-75"></div>
+    <div class="pb-4 pt-2 w-75 d-md-flex card_layout">
+
+        <a href="./Chris.html" class="text-dark text-decoration-none">
+            <div>
+                <img src="./Assets/images/chris1.jfif" alt="" class="rounded">
+            </div>
+            <div class="small mt-3 pt-2 ml-3">
+                <div class="h6">CHRIS BROWN</div>
+                <small>
+                    <div class="opacity"><small>11 Sep 2018</small></div>
+                    Here’s a set of promo photos I shot for
+                    the singer Matt Gullaci, you can check out his wonderful music here
+                    www.mattgullaci.com Enjoy! Simreteab....
+                </small>
+        </a>
+
+    </div>
+
+    </div>
+    <div class="border-bottom pt-1 w-75"></div>
+    <div class="pb-4 pt-2 w-75 d-md-flex card_layout">
+
+        <a href="./Just.html" class="text-dark text-decoration-none">
+            <div>
+                <img src="./Assets/images/just2.jfif" alt="" class="rounded">
+            </div>
+            <div class="small mt-3 pt-2 ml-3">
+                <div class="h6">JUSTIN BIEBER</div>
+                <small>
+                    <div class="opacity"><small>16 Oct 2019</small></div>
+                    This coming Friday I will taking photos for
+                    Shades of Summer at enex100 and Forrest Chase. The first event will be
+                    Perth’s Largest Shopping party held at enex100 and Forest Chase...
+                </small>
+        </a>
+
+    </div>
+
+    </div>
+    <div class="border-bottom pt-1 w-75"></div>
+    <div class="pb-4 pt-2 w-75 d-md-flex card_layout">
+
+        <a href="./Layla.html" class="text-dark text-decoration-none">
+            <div>
+                <img src="./Assets/images/car1.jfif" alt="" class="rounded">
+            </div>
+            <div class="small mt-3 pt-2 ml-3">
+                <div class="h6">LAYLA MAC</div>
+                <small>
+                    <div class="opacity"><small>7 Nov 2020</small></div>
+                    Hy Simreteab, Recently I had the pleasure of shooting some
+                    portraits + product shots for a pre-existing client of mine, Sam - Owner +
+                    creator of Ayana Organics.
+                    Ayana Organics is a Western Australian owned business that produces hand
+                    made, natural, organic, cruelty free, vegan skin care products...
+                </small>
+        </a>
+
+    </div>
+
+    </div>
+    <div class="border-bottom pt-1 w-75"></div>
+    <div class="pb-4 pt-2 w-75 d-md-flex card_layout">
+
+        <a href="./Biyonce.html" class="text-dark text-decoration-none">
+            <div>
+                <img src="./Assets/images/bion2.png" alt="" class="rounded">
+            </div>
+            <div class="small mt-3 pt-2 ml-3">
+                <div class="h6">BIYONCE GISELLE</div>
+                <small>
+                    <div class="opacity"><small>3 Jul 2020</small></div>
+                    Dear Simreteab,
+
+                    Hi! How have you been? I’m really sorry we haven’t been in touch, things have been very busy, but I
+                    do have some news to share with you. I will be in town for a few weeks in the month of March and I
+                    would love to have the chance to see you...
+                </small>
+        </a>
+
+    </div>
+
+    </div>
+  <div class="card-footer text-center w-75 mb-3">1</div>
+    </div>
+
+
+
 </body>
 
 </html>

@@ -33,19 +33,34 @@
                 background-color: #e9ecef;
                 border-radius: 0.3rem;
             }
-        }
+       
+}
 
         @media only screen and (max-width: 576px) {
 
             #main {
                 padding-left: 1rem;
             }
+        #main img{
+            padding-right: 3rem;}
+        .text_wid{
+                width: 90vw;}
+         .ml{
+            width: 100%;
+}
 
         }
-
+        
         .opacity {
             color: rgba(0, 0, 0, 0.2);
         }
+        @media only screen and (min-width: 992px) {
+           .w50{
+             width: 50% !important;}
+            .ml{
+               margin-left:25%;
+               width: 100%;}
+         }
     </style>
 </head>
 
@@ -122,7 +137,7 @@
                You can contact me by sending email
             </div>
             </div>
-            <div class="pb-4 pt-2 d-md-flex ">
+            <div class="pb-4 pt-2 d-md-flex text_wid">
               <div class="text-center card_layout">
                 I loves creating images that make the viewer feel as if they <br> are stepping
                 into a dream. I am a portrait <br> and commercial photographer residing in Kotebe,
@@ -171,11 +186,11 @@
     <div class="w-25 mx-auto pt-5 mb-3" style="border-bottom: black solid 1px;"></div>
     <div class="mt-5">
       <form action="mailto:se.simreteab.mekbib@gmail.com" method="POST" enctype="utf-8">
-        <div class="form-group text-center table-bordered ml-5 mr-5 border-0">
-           <input type="text" class="form-control w-50" placeholder="First Name" style="border: 1px solid black; border-radius: 0;">
-           <input type="text" class="form-control border-top-0 w-50" placeholder="Last Name" style="border: 1px solid black; border-radius: 0;">
-           <input type="email" class="form-control border-top-0 w-50" placeholder="Email" style="border: 1px solid black; border-radius: 0;">
-           <textarea class="form-control border-top-0 w-50" rows="10" placeholder="Message"style="border: 1px solid black; border-radius: 0;"></textarea>
+        <div class="form-group text-center table-bordered ml-5 mr-5 border-0 ml">
+           <input type="text" class="form-control w50" placeholder="First Name" style="border: 1px solid black; border-radius: 0;">
+           <input type="text" class="form-control border-top-0 w50" placeholder="Last Name" style="border: 1px solid black; border-radius: 0;">
+           <input type="email" class="form-control border-top-0 w50" placeholder="Email" style="border: 1px solid black; border-radius: 0;">
+           <textarea class="form-control border-top-0 w50" rows="10" placeholder="Message"style="border: 1px solid black; border-radius: 0;"></textarea>
            <input class="form-control-lg mt-2" type="submit" value="Send Message">
 
           </div>

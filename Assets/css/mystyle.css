@@ -252,8 +252,8 @@
                 float: left;
             }
             body{
-                overflow-y: hidden;
-                overflow-x: scroll;
+                overflow-y: scroll;
+                overflow-x: hidden;
             }
             #main{
                 margin-top: 50px;

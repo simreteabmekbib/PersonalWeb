@@ -298,14 +298,13 @@
 }
 .social_icon #share:hover{
     background-color: black;
-    
 }
 #hov-red:hover{
-    text-decoration-color: red;
-    color: red;
+  text-decoration-color: #969494;
+  color: rgb(131, 127, 127);
 }
 #hov-red{
-  color: black;
+  color: rgb(184, 181, 181);
 }
 .ml50{
   margin-left: 24%;

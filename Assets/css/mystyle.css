@@ -229,7 +229,9 @@
             #main{
                 margin-left: 0px;
             } 
-            
+            img{
+              height: 85vh;
+            }
             #top_nav{
                 position: fixed;
                 background: white;
@@ -250,19 +252,15 @@
                 float: left;
             }
             body{
-                overflow-y: scroll;
-                overflow-x: hidden;
-            }
-            img{
-                width: 90vw;
-                margin-left: 2rem;
+                overflow-y: hidden;
+                overflow-x: scroll;
             }
             #main{
                 margin-top: 50px;
             }
             #wid{
-                width: 100%;
-                margin-bottom: 40px;
+              width: 5871px; 
+              overflow: hidden;
               }
             .padtop{
               padding-top: 5rem;
@@ -306,4 +304,8 @@
 }
 #hov-red{
   color: black;
+}
+.ml50{
+  margin-left: 24%;
+  
 }

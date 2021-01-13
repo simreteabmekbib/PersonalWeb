@@ -259,8 +259,8 @@
                 margin-top: 50px;
             }
             #wid{
-              width: 5871px; 
-              overflow: hidden;
+              width: 100%; 
+              margin-bottom: 40px;
               }
             .padtop{
               padding-top: 5rem;

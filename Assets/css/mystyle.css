@@ -275,7 +275,9 @@
           #main{
             margin-top: 50px;
         }
-
+        img{
+          height: 85vh;
+        }
         }
         @media only screen and (max-width: 576px){
             #main{
@@ -405,6 +407,9 @@
               }
             #share{
               visibility: hidden;
+            }
+            img{
+              height: 85vh;
             }
             }
           

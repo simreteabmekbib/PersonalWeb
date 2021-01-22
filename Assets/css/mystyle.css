@@ -275,10 +275,7 @@
           #main{
             margin-top: 50px;
         }
-        img{
-          height: 90vh;
 
-        }
         }
         @media only screen and (max-width: 576px){
             #main{
@@ -306,10 +303,7 @@
             #main{
                 margin-top: 50px;
             }
-            img{
-              height: 90vh;
-
-            }
+          
             #wid{
               width: 5871px; 
               overflow: hidden;

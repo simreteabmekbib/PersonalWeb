@@ -245,14 +245,14 @@
             
           }
           .sidenav{
-            width: 10rem;
+            width: 12rem;
             height: 90vh;
             margin-top: 10vh;
             position:fixed;
             top: 0;
-            left: -10rem;
+            left: -12rem;
             background-color: white;
-            margin-left: 2rem;
+            padding-left: 2rem;
                         }
           .change .sidenav{
             left: 0rem;
@@ -342,6 +342,8 @@
               top: 0;
               left: -100rem;
               background-color: white;
+              padding-left: 0;
+
                           }
             .change .sidenav{
               left: 0rem;

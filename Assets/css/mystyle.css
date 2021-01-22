@@ -276,10 +276,7 @@
           #main{
             margin-top: 50px;
         }
-        img{
-          height: 85vh;
-          width: auto;
-        }
+       
         }
         @media only screen and (max-width: 576px){
             #main{
@@ -410,10 +407,7 @@
             #share{
               visibility: hidden;
             }
-            img{
-              height: 60vh;
-              width: auto;
-            }
+            
             }
           
 .social_icon a{

@@ -224,6 +224,7 @@
           #wid{
             width: 5871px; 
             overflow: hidden;
+
           }
           .hamberger-menu{
             width: 1.5rem;
@@ -277,6 +278,7 @@
         }
         img{
           height: 85vh;
+          width: auto;
         }
         }
         @media only screen and (max-width: 576px){
@@ -410,6 +412,7 @@
             }
             img{
               height: 85vh;
+              width: auto;
             }
             }
           

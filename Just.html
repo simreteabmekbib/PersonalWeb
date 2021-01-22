@@ -13,13 +13,6 @@
     <link rel="stylesheet" href="./Assets/css/mystyle.css">
     <script src="./Assets/js/jquery.js"></script>
 
-    <script type="text/javascript">
-        $(document).ready(function () {
-            $('.sidebarBtn').click(function () {
-                $('.sidebar').toggleClass('active');
-            })
-        })
-    </script>
     <style>
        
         body {
@@ -150,43 +143,47 @@
     <div class="sidebar">
         <div id="top_nav">
             <a href="" class="text-dark text-decoration-none h4">SIMRETEAB MEKBIB PHOTOGRAPHY</a>
-            <button class="sidebarBtn">
-                <span></span>
-            </button>
+            <div class="hamberger-menu">
+                <div class="line line1"></div>
+                <div class="line line2"></div>
+                <div class="line line3"></div>
+            </div>
+
         </div>
-        <ul class="list-unstyled padtop">
+        <section class="sidenav">
+            <ul class="list-unstyled padtop menu">
 
 
-            <li><a href="./index.html" class="text-decoration-none text-dark small">Home</a></li>
-
-
-
-            <li><a href="./Edited.html" class="text-decoration-none text-dark small">Edited</a></li>
+                <li class="menu-item"><a href="./index.html" class="text-decoration-none text-dark small menu-link">Home</a></li>
 
 
 
-            <li><a href="./Portraits.html" class="text-decoration-none text-dark small">Portraits</a></li>
+                <li class="menu-item"><a href="./Edited.html" class="text-decoration-none text-dark small menu-link">Edited</a>
+                </li>
 
 
 
-            <li><a href="Personal.html" class="text-decoration-none text-dark small">Personal</a></li>
+                <li class="menu-item"><a href="./Portraits.html"
+                        class="text-decoration-none text-dark small menu-link">Portraits</a></li>
 
 
 
-            <li><a href="./Blog.html" class="text-decoration-none text-dark small">Blog</a></li>
+                <li class="menu-item"><a href="Personal.html" class="text-decoration-none text-dark small menu-link">Personal</a>
+                </li>
 
 
 
-            <li><a href="./Contact+About_me.html" class="text-decoration-none text-dark small">Contact +
-                    About
-                    me.</a></li>
-        </ul>
+                <li class="menu-item"><a href="./Blog.html" class="text-decoration-none text-dark small menu-link">Blog</a></li>
 
-        <p class="small text-secondary pt-3"><small>© Simreteab Mekbib 2020</small></p>
-        <div id="position">
-            <div>
 
-                <div class="social_icon">
+
+                <li class="menu-item"><a href="./Contact+About_me.html"
+                        class="text-decoration-none text-dark small menu-link">Contact + About me.</a></li>
+            </ul>
+  
+        <p class="small text-secondary pt-3 sing"><small>© Simreteab Mekbib 2020</small></p>
+        
+                <div class="social_icon menu">
 
                     <a href="https://github.com/simreteabmekbib" target="_blank"><i class="fa fa-github text-center"
                             id="social"></i>
@@ -202,8 +199,9 @@
 
                     <a href="" class="text-decoration-none" id="share" target="_blank">Share</a>
                 </div>
+                </section>
                 <div class="fixed-bottom small mr-2 mt-1">
-                    <a href="" style="right: 0; bottom: 0; position: absolute;" id="hov-red">Using Format </a>
+                    <a href="" id="hov-red">Using Format </a>
                 </div>
             </div>
         </div>
@@ -296,7 +294,13 @@
     
     </div>
     </div>
-
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.hamberger-menu').click(function () {
+                document.querySelector(".sidebar").classList.toggle("change");
+            })
+        })
+    </script>
 </body>
 
 </html>
